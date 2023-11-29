@@ -55,6 +55,11 @@ $(document).ready(function () {
 
         const itemId = parseInt(selectedItem.val(), 10);
 
+        // Garder trace des items achetés
+        if (!player.purchasedItems) {
+            player.purchasedItems = [];
+        }
+
         // Recharger les items depuis le fichier item.json
         $.getJSON('items.json')
             .done(function (data) {
@@ -74,18 +79,27 @@ $(document).ready(function () {
                 // Mettre à jour l'interface utilisateur
                 updateCharacterUI();
 
-                // Garder trace des items achetés
-                if (!player.purchasedItems) {
-                    player.purchasedItems = [];
-                }
-                player.purchasedItems.push(itemId);
-                console.log(player.purchasedItems)
+                player.purchasedItems.push({
+                    name: purchasedItem.nom,
+                    price: purchasedItem.prix
+                });
 
-                // Rediriger vers la page d'aventure
-                // window.location.href = 'adventure.html';
+                // Sauvegarder les items achetés dans LocalStorage
+                savePurchasedItemsToLocalStorage(player.purchasedItems);
+
             })
             .fail(function (error) {
                 console.error('Erreur lors du chargement des items :', error);
             });
+
+    });
+    // Fonction pour sauvegarder les items achetés dans localStorage
+    function savePurchasedItemsToLocalStorage(purchasedItems) {
+        localStorage.setItem('purchasedItems', JSON.stringify(purchasedItems));
+    }
+
+
+    $('#adventure-btn').on('click', function () {
+        window.location.href = 'aventure.html'
     });
 });
