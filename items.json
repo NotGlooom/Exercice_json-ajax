@@ -1,63 +1,63 @@
-{
-  "items": [{
+[
+  {
     "id": 1,
     "nom": "Encyclopédie des meilleurs sorts",
-    "prix": "$1075.27",
+    "prix": 1075.27,
     "attaque": 4,
     "defense": 1
   }, {
     "id": 2,
     "nom": "Crocs en acier",
-    "prix": "$578.81",
+    "prix": 578.81,
     "attaque": 4,
     "defense": 2
   }, {
     "id": 3,
     "nom": "Collier de macaronis",
-    "prix": "$1373.05",
+    "prix": 1373.05,
     "attaque": 0,
     "defense": 5
   }, {
     "id": 4,
     "nom": "Casque en vitre",
-    "prix": "$676.91",
+    "prix": 676.91,
     "attaque": 1,
     "defense": 0
   }, {
     "id": 5,
     "nom": "Potion qui rend les ennemis poilus",
-    "prix": "$53.09",
+    "prix": 53.09,
     "attaque": 4,
     "defense": 3
   }, {
     "id": 6,
     "nom": "Puce domestique",
-    "prix": "$976.54",
+    "prix": 976.54,
     "attaque": 5,
     "defense": 2
   }, {
     "id": 7,
     "nom": "Chat édenté",
-    "prix": "$1312.36",
+    "prix": 1312.36,
     "attaque": 0,
     "defense": 4
   }, {
     "id": 8,
     "nom": "Épée de carton",
-    "prix": "$757.30",
+    "prix": 757.30,
     "attaque": 0,
     "defense": 1
   }, {
     "id": 9,
     "nom": "Bouclier rouillé",
-    "prix": "$61.28",
+    "prix": 61.28,
     "attaque": 5,
     "defense": 3
   }, {
     "id": 10,
     "nom": "Anneau maléfique à saveur de cerise",
-    "prix": "$1234.21",
+    "prix": 1234.21,
     "attaque": 1,
     "defense": 2
-  }]
-}
+  }
+]

@@ -14,44 +14,49 @@
     <script src="Script.js" defer></script>
   </head>
   <body>
-  <div id="div1">
+  <div class="container" id="div1">
     <header>
-      <h1 style="text-align: center; color: white" >Équiper son personnage</h1>
+      <h1 style="color:white">Équiper son personnage</h1>
     </header>
-    <div id="div2">
-    <main>
-      <section>
-        <h2>Équipement disponible</h2>
-        <table class="bandes">
-          <thead>
+    <div class="row" id="div2">
+      <main class="col-md-12">
+        <section>
+          <h2>Équipement disponible</h2>
+          <table class="table bandes" id="tableau">
+            <thead>
             <tr>
               <th scope="col">Nom</th>
               <th scope="col">Bonus défense</th>
               <th scope="col">Bonus attaque</th>
               <th scope="col">Coût</th>
             </tr>
-          </thead>
-          <tbody>
+            </thead>
+            <tbody>
             <!-- Les items vont ici -->
-          </tbody>
-        </table>
-        <label for="achat">Acheter :</label>
-        <select id="achat">
-          <!-- Les items vont ici -->
-        </select>
-        <button>Confirmer</button>
-        <p class="alerte invisible">Oups !</p>
-      </section>
-      <section>
-        <h2>Statistiques</h2>
-        <ul>
-          <li>Argent : <span id="argent"></span></li>
-          <li>Attaque : <span id="attaque"></span></li>
-          <li>Défense : <span id="defense"></span></li>
-        </ul>
-      </section>
-    </main>
+            </tbody>
+          </table>
+          <div class="form-group" id="div-achat">
+            <label for="achat">Acheter :</label>
+            <select class="form-control" style="width: 500px; margin-left: 30px;" id="achat">
+              <!-- Les items vont ici -->
+            </select>
+          <button class="btn btn-primary" id="btn-confirm" style="margin-left: 30px;">Confirmer</button>
+          <p class="alerte invisible">Oups !</p>
+          </div>
+        </section>
+        <section style="margin-top: 30px;">
+          <h2>Statistiques</h2>
+          <ul>
+            <li>Argent : <span id="argent"></span></li>
+            <li>Attaque : <span id="attaque"></span></li>
+            <li>Défense : <span id="defense"></span></li>
+          </ul>
+        </section>
+      </main>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

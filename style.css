@@ -1,12 +1,30 @@
 #div1 {
     border: 1px solid black;
-    height: 800px;
     background-image: url("https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
 #div2 {
-    background: white;
+    background: #ffffff;
     width: 90%;
     margin: auto;
+    margin-bottom: 60px;
 }
 
+h1 {
+    text-align: center;
+}
+
+.bandes th {
+    background-color: #555;
+    color: white;
+}
+
+.invisible {
+    display: none;
+}
+
+#div-achat {
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+}
